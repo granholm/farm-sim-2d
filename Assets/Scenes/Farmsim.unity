@@ -2040,7 +2040,19 @@ MonoBehaviour:
         m_CallState: 2
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 354929545}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnMoveInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c3b8047c-3ece-4431-812a-d949b8b8d770
     m_ActionName: Main/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
@@ -2205,12 +2217,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dddbd95d88dbd049a0ec27120e6d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 2
   interactLayerMask:
     serializedVersion: 2
-    m_Bits: 0
-  rig: {fileID: 0}
-  sr: {fileID: 0}
+    m_Bits: 64
+  rig: {fileID: 354929542}
+  sr: {fileID: 354929543}
 --- !u!4 &365345443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1376725098720204605, guid: d40ad143668dbcc4fabca755f3d6011b, type: 3}
@@ -5967,6 +5979,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d40ad143668dbcc4fabca755f3d6011b, type: 3}
+--- !u!1 &1218416363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218416365}
+  - component: {fileID: 1218416364}
+  m_Layer: 0
+  m_Name: _GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1218416364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218416363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20fcdf5ea15cd349ba4460b01584da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curDay: 1
+  money: 100
+  cropInventory: 4
+  selectedCropToPlant: {fileID: 11400000, guid: c24a8a1f46d30a54bbed39939f94ae61, type: 2}
+--- !u!4 &1218416365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218416363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1229665489
 PrefabInstance:
   m_ObjectHideFlags: 0
